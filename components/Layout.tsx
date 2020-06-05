@@ -1,6 +1,7 @@
 import * as React from 'react'
 import Head from 'next/head'
 import { Heading } from 'grommet';
+import Link from './Link';
 
 type Props = {
   title?: string
@@ -8,7 +9,7 @@ type Props = {
 
 const Layout: React.FunctionComponent<Props> = ({
   children,
-  title = 'Dylan Allen | JavaScript Developer | Frontend Web | React | Serverless',
+  title = 'Black Lives Mastter | DylanAllen.net',
 }) => (
   <div>
     <Head>
@@ -24,7 +25,7 @@ const Layout: React.FunctionComponent<Props> = ({
         {children}
       </div>
       <footer className="container">
-        dylanallen.net
+        dylanallen.net | <Link href="https://github.com/DylanAllen/blm">github</Link>
       </footer>
     </main>
   </div>
